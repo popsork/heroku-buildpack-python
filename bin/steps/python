@@ -24,7 +24,7 @@ if [ ! "$SKIP_INSTALL" ]; then
     # Prepare destination directory.
     mkdir -p .heroku/python
 
-    curl http://chunk.io/f/600bbabfea3c47a3bf5cf011c5a3995a -s | tar zxv -C .heroku/python &> /dev/null
+    curl http://chunk.io/f/e5722085923d44c48349ab98a943ba12 -s | tar zxv -C .heroku/python &> /dev/null
     mcount "version.python.$PYTHON_VERSION"
 
     if [[ $? != 0 ]] ; then
